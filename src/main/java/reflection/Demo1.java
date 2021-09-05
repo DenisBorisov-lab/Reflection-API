@@ -52,9 +52,9 @@ public class Demo1 {
         System.out.println(o.toString());
 
         Constructor[] constructors = clazz1.getConstructors();
-        for (Constructor constructor : constructors){
+        for (Constructor constructor : constructors) {
             Class[] parametrtypes = constructor.getParameterTypes();
-            for (Class parametr : parametrtypes){
+            for (Class parametr : parametrtypes) {
                 System.out.println(parametr.getName());
             }
         }

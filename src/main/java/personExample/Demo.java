@@ -25,14 +25,14 @@ public class Demo {
     }
 
     @SneakyThrows
-    public static void printData(){
+    public static void printData() {
         Method method = person.getClass().getDeclaredMethod("printData");
         method.setAccessible(true);
         method.invoke(person);
     }
 
     @SneakyThrows
-    public static void getName(){
+    public static void getName() {
         Field field = person.getClass().getDeclaredField("name");
         field.setAccessible(true);
         String name = field.get(person).toString();
@@ -41,7 +41,7 @@ public class Demo {
     }
 
     @SneakyThrows
-    public static void setAge(int age){
+    public static void setAge(int age) {
         Field field = person.getClass().getDeclaredField("age");
         field.setAccessible(true);
         field.set(person, age);

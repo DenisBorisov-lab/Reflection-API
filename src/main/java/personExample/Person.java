@@ -27,7 +27,7 @@ public class Person {
         return position;
     }
 
-    private void printData(){
+    private void printData() {
         System.out.println("Information: ");
         System.out.println("name: " + name);
         System.out.println("age: " + age);
